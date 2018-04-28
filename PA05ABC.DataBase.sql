@@ -28,7 +28,7 @@ END
 
 GO
 
-CREATE PROCEDURE CatArticulosGuardar @pCatArticulosID INT, @pDescripcion VARCHAR(200), @pPrecio NUMERIC(18,2), @pCosto NUMERIC(18,2), @pResultado BIT = 0, @pMsg VARCHAR(300) = '' 
+CREATE PROCEDURE CatArticulosGuardar @pCatArticulosID INT, @pDescripcion VARCHAR(200), @pPrecio NUMERIC(18,2), @pCosto NUMERIC(18,2), @pResultado BIT = 0 OUTPUT, @pMsg VARCHAR(300) = '' OUTPUT
 AS
 BEGIN
 	
@@ -74,7 +74,7 @@ END
 
 GO 
 
-CREATE PROCEDURE CatArticulosEliminar @pCatArticulosID INT,  @pResultado BIT = 0, @pMsg VARCHAR(300) = '' 
+CREATE PROCEDURE CatArticulosEliminar @pCatArticulosID INT,  @pResultado BIT = 0 OUTPUT, @pMsg VARCHAR(300) = '' OUTPUT
 AS
 BEGIN
 	
@@ -84,3 +84,21 @@ BEGIN
 
 END
 
+GO
+
+IF EXISTS ( SELECT name FROM sys.objects WHERE name = 'CatArticulosBuscar')
+BEGIN
+	DROP PROCEDURE CatArticulosBuscar
+END 
+
+GO
+
+CREATE PROCEDURE CatArticulosBuscar 
+AS
+BEGIN
+	SELECT 	ca.CatArticulosID,
+			ca.Descripcion,
+			ca.Precio,
+			ca.Costo
+	FROM CatArticulos ca	
+END

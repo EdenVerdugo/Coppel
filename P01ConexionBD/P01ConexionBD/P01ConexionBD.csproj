@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="ConexionBDCasteable.cs" />
+    <Compile Include="ConexionBDParametros.cs" />
     <Compile Include="EConexionBDTipoConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -68,4 +68,8 @@ C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.csproj.Gener
 C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P01ConexionBD.dll
 C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\Npgsql.dll
 C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\SQL\mssql.xml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P01ConexionBD.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\Npgsql.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\Npgsql.xml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P02Clonador.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P02Clonador.pdb

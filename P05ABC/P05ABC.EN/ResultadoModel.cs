@@ -10,5 +10,6 @@ namespace P05ABC.EN
     {
         public bool Valor { get; set; }
         public string Mensaje { get; set; }
+        public Object Datos { get; set; }
     }
 }

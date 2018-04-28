@@ -6,12 +6,18 @@
         xmlns:local="clr-namespace:P05ABC"
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:af="http://schemas.fontawesome.io/icons/"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="600" 
         Width="800"
         WindowStartupLocation="CenterScreen"
     >
+    <Window.InputBindings>
+        <KeyBinding Key="F5"
+                    Command="{Binding BuscarCommand}"
+                    />
+    </Window.InputBindings>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -19,7 +25,9 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
             <Button Width="80"
-                    Margin="5">
+                    Margin="5"
+                    Command="{Binding NuevoItemCommand}"
+                    >
                 <StackPanel>
                     <af:ImageAwesome Icon="File"
                                      Height="14"
@@ -35,7 +43,9 @@
 
 
             <Button Width="80"
-                    Margin="5">
+                    Margin="5"
+                    Command="{Binding ModificarItemCommand}"
+                    >
                 <StackPanel>
                     <af:ImageAwesome Icon="Edit"
                                      Height="14"
@@ -50,7 +60,9 @@
             </Button>
 
             <Button Width="80"
-                    Margin="5">
+                    Margin="5"
+                    Command="{Binding BorrarItemCommand}"
+                    >
                 <StackPanel>
                     <af:ImageAwesome Icon="Trash"
                                      Height="14"
@@ -65,8 +77,28 @@
             </Button>
         </StackPanel>
 
-        <DataGrid Grid.Row="1">
-            
+        <DataGrid Grid.Row="1"
+                  ItemsSource="{Binding Lista}"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserResizeRows="False"
+                  AutoGenerateColumns="True"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectedItem="{Binding ItemSeleccionado, UpdateSourceTrigger=PropertyChanged}"
+                  SelectionUnit="FullRow"                  
+                  >
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding ModificarItemCommand}"
+                                           />
+                </i:EventTrigger>                                
+            </i:Interaction.Triggers>
+            <DataGrid.InputBindings>
+                <KeyBinding Key="Delete"
+                            Command="{Binding BorrarItemCommand}"
+                            />
+            </DataGrid.InputBindings>            
         </DataGrid>
     </Grid>
 </metro:MetroWindow>

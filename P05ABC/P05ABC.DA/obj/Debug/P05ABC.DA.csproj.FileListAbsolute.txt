@@ -13,4 +13,6 @@ C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\P01ConexionBD.dl
 C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\P05ABC.EN.dll
 C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\P05ABC.EN.pdb
-C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\SQL\mssql.xml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\P01ConexionBD.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\Npgsql.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.DA\bin\Debug\Npgsql.xml

@@ -74,7 +74,52 @@ namespace P01ConexionBD
                 this._cnx.Close();
             }
         }
-               
+
+        public void EjecutarConsulta(string consulta, ConexionBDParametros parametros)
+        {
+            try
+            {
+                this._cnx.Open();                
+                //using para liberar recursos del command cuando acabe la consulta
+                using (var cmd = this._cnx.CreateCommand())
+                {                    
+                    cmd.CommandText = consulta;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    
+                    foreach(var p in parametros.ListaParametros)
+                    {                        
+                        var pt = cmd.CreateParameter();
+                        pt.ParameterName = p.Name;
+                        pt.DbType = p.Type;
+                        pt.Value = p.Value;
+                        pt.Size = p.Size;
+                        pt.Direction = p.Direction;
+
+                        cmd.Parameters.Add(pt);
+                    }                                        
+
+                    cmd.ExecuteNonQuery();
+
+                    foreach(IDbDataParameter p in cmd.Parameters)
+                    {
+                        var param = parametros.ListaParametros.FirstOrDefault(x => x.Name == p.ParameterName);
+                        if(param != null)
+                        {
+                            param.Value = p.Value;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                this._cnx.Close();
+            }
+        }
+
 
         public DataTable EjecutarConsultaResultados(string consulta)
         {
@@ -86,6 +131,7 @@ namespace P01ConexionBD
                 using (var cmd = this._cnx.CreateCommand())
                 {
                     cmd.CommandText = consulta;
+
                     dt = new DataTable();
 
                     switch (this._tipoConexion)
@@ -113,7 +159,67 @@ namespace P01ConexionBD
             return dt;
         }
 
-        public List<T> EjecutarConsultaResultados<T>(string consulta)
+        public DataTable EjecutarConsultaResultados(string consulta, ConexionBDParametros parametros)
+        {
+            DataTable dt = null;
+            try
+            {
+                this._cnx.Open();
+
+                using (var cmd = this._cnx.CreateCommand())
+                {
+                    cmd.CommandText = consulta;
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    dt = new DataTable();
+
+                    foreach (var p in parametros.ListaParametros)
+                    {
+                        var pt = cmd.CreateParameter();
+                        pt.ParameterName = p.Name;
+                        pt.DbType = p.Type;
+                        pt.Value = p.Value;
+                        pt.Size = p.Size;
+                        pt.Direction = p.Direction;
+
+                        cmd.Parameters.Add(pt);
+                    }
+
+                    switch (this._tipoConexion)
+                    {
+                        case EConexionBDTipoConexion.MSSQLServer:
+                            var sqlAdapter = new SqlDataAdapter((SqlCommand)cmd);
+                            sqlAdapter.Fill(dt);
+                            break;
+                        case EConexionBDTipoConexion.PostgreSQL:
+                            var pgAdapter = new NpgsqlDataAdapter((NpgsqlCommand)cmd);
+                            pgAdapter.Fill(dt);
+                            break;
+                    }
+
+                    foreach (IDbDataParameter p in cmd.Parameters)
+                    {
+                        var param = parametros.ListaParametros.FirstOrDefault(x => x.Name == p.ParameterName);
+                        if (param != null)
+                        {
+                            param.Value = p.Value;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                this._cnx.Close();
+            }
+
+            return dt;
+        }
+
+        public List<T> EjecutarConsultaResultados<T>(string consulta, ConexionBDParametros parametros)
         {
             List<T> lst = new List<T>();
             Type temp = typeof(T);
@@ -123,6 +229,98 @@ namespace P01ConexionBD
                 this._cnx.Open();
 
                 using(var cmd = this._cnx.CreateCommand())
+                {
+                    cmd.CommandText = consulta;
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    foreach (var p in parametros.ListaParametros)
+                    {
+                        var pt = cmd.CreateParameter();
+                        pt.ParameterName = p.Name;
+                        pt.DbType = p.Type;
+                        pt.Value = p.Value;
+                        pt.Size = p.Size;
+                        pt.Direction = p.Direction;
+
+                        cmd.Parameters.Add(pt);
+                    }
+
+                    var lector = cmd.ExecuteReader();
+
+                    while (lector.Read())
+                    {
+                        //crear la instancia del objeto 
+                        T obj = Activator.CreateInstance<T>();
+
+                        //buscar todos sus campos y propiedades
+                        for (int i = 0; i < lector.FieldCount; i++)
+                        {
+
+                            foreach (FieldInfo pro in temp.GetFields())
+                            {
+                                // si se encuentra se asigna el valor encontrado
+                                // nota : esto puede causar una excepcion si el tipo de valor que se encuentra no es el mismo tipo que regresa la consulta
+                                if (pro.Name == lector.GetName(i))
+                                {
+                                    pro.SetValue(obj, lector[i]);
+                                }
+                                else
+                                {
+                                    continue;
+                                }
+                            }
+
+                            foreach (PropertyInfo pro in temp.GetProperties())
+                            {
+                                if (pro.Name == lector.GetName(i))
+                                {
+                                    pro.SetValue(obj, lector[i], null);
+                                }
+                                else
+                                {
+                                    continue;
+                                }
+                            }
+                        }
+
+                        lst.Add(obj);
+                    }
+                    lector.Close();
+
+                    foreach (IDbDataParameter p in cmd.Parameters)
+                    {
+                        var param = parametros.ListaParametros.FirstOrDefault(x => x.Name == p.ParameterName);
+                        if (param != null)
+                        {
+                            param.Value = p.Value;
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                this._cnx.Close();
+            }
+
+
+            return lst;
+        }
+
+
+        public List<T> EjecutarConsultaResultados<T>(string consulta)
+        {
+            List<T> lst = new List<T>();
+            Type temp = typeof(T);
+
+            try
+            {
+                this._cnx.Open();
+
+                using (var cmd = this._cnx.CreateCommand())
                 {
                     cmd.CommandText = consulta;
 
@@ -168,7 +366,7 @@ namespace P01ConexionBD
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }

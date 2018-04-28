@@ -5,6 +5,5 @@ C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\bin\Debug\Syste
 C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\bin\Debug\Npgsql.pdb
 C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\bin\Debug\Npgsql.xml
 C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\obj\Debug\P01ConexionBD.csprojResolveAssemblyReference.cache
-C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\obj\Debug\P01ConexionBD.csproj.CoreCompileInputs.cache
 C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\obj\Debug\P01ConexionBD.dll
 C:\Users\Eden Verdugo\Desktop\Coppel\P01ConexionBD\P01ConexionBD\obj\Debug\P01ConexionBD.pdb

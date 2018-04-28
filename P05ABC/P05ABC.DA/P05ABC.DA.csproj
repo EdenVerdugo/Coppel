@@ -30,12 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Npgsql">
-      <HintPath>F:\Coppel\P05ABC\P05ABC.DA\Npgsql.dll</HintPath>
-    </Reference>
-    <Reference Include="P01ConexionBD">
-      <HintPath>F:\Coppel\P05ABC\P05ABC.DA\P01ConexionBD.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Threading.Tasks.Extensions">
@@ -53,11 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SQL\mssql.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\P01ConexionBD\P01ConexionBD\P01ConexionBD.csproj">
+      <Project>{8ffe4c2c-7eb1-4430-90d4-2df684c21fe6}</Project>
+      <Name>P01ConexionBD</Name>
+    </ProjectReference>
     <ProjectReference Include="..\P05ABC.EN\P05ABC.EN.csproj">
       <Project>{CEA17784-462E-4FB5-BBDA-67C2DD5B7856}</Project>
       <Name>P05ABC.EN</Name>

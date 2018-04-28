@@ -14,7 +14,7 @@ namespace P05ABC.EN
         public static ConexionModel Conexion { get; set; } = new ConexionModel()
         {
             DataSource = "localhost",            
-            DataBase = "test",
+            DataBase = "Prueba",
             UserID = "sa",
             Password = "123"
         };

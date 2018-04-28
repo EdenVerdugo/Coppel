@@ -129,6 +129,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\P02Clonador\P02Clonador\P02Clonador.csproj">
+      <Project>{90e39864-654f-404a-ac71-8f0db9665ce1}</Project>
+      <Name>P02Clonador</Name>
+    </ProjectReference>
     <ProjectReference Include="..\P05ABC.DA\P05ABC.DA.csproj">
       <Project>{9da5cb7e-5369-45d1-87e6-de20678d362b}</Project>
       <Name>P05ABC.DA</Name>

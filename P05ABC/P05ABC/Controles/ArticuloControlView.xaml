@@ -6,10 +6,10 @@
              xmlns:local="clr-namespace:P05ABC.Controles"
              mc:Ignorable="d" 
              d:DesignHeight="90" 
-             d:DesignWidth="430"             
+             d:DesignWidth="430"              
              >
-    <Grid>
-        <StackPanel VerticalAlignment="Center">
+    <Grid VerticalAlignment="Center" FocusManager.FocusedElement="{Binding ElementName=DescripcionText}">
+        <StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Descripción :"
                            Margin="5,3"
@@ -18,6 +18,8 @@
                            />
                 <TextBox Width="300"
                          Margin="5,3"
+                         Name="DescripcionText"
+                         Text="{Binding Descripcion, UpdateSourceTrigger=PropertyChanged}"
                          />
             </StackPanel>
 
@@ -29,6 +31,7 @@
                            />
                 <TextBox Width="100"
                          Margin="5,3"
+                         Text="{Binding Precio, UpdateSourceTrigger=PropertyChanged}"
                          />
             </StackPanel>
 
@@ -40,6 +43,7 @@
                            />
                 <TextBox Width="100"
                          Margin="5,3"
+                         Text="{Binding Costo, UpdateSourceTrigger=PropertyChanged}"
                          />
             </StackPanel>
         </StackPanel>            

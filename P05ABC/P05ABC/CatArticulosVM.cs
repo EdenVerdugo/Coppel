@@ -1,4 +1,5 @@
-﻿using P05ABC.DA;
+﻿using P02Clonador;
+using P05ABC.DA;
 using P05ABC.EN;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,8 @@ namespace P05ABC
 
             this.Lista = new List<CatArticulosModel>();
             this.ItemSeleccionado = null;
+
+            this.Buscar();
         }
 
         private List<CatArticulosModel> _Lista;
@@ -67,9 +70,14 @@ namespace P05ABC
 
         private void NuevoItem(Object o)
         {
+            this.ItemSeleccionado = new CatArticulosModel();
+
             CatArticulosDetView view = new CatArticulosDetView();
             view.DataContext = this;
+            view.ArticuloControl.DataContext = this.ItemSeleccionado;
             view.ShowDialog();
+
+            this.Buscar();
         }
 
 
@@ -90,10 +98,15 @@ namespace P05ABC
 
         private void ModificarItem(Object o)
         {
-            if (MessageBox.Show("¿Deseas guardar los cambios?", "", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
+            this.ItemSeleccionado = Clonador.Clonar<CatArticulosModel>(this.ItemSeleccionado);
 
-            }
+            CatArticulosDetView view = new CatArticulosDetView();
+            view.DataContext = this;
+            view.ArticuloControl.DataContext = this.ItemSeleccionado;
+
+            view.ShowDialog();
+
+            this.Buscar();
         }
 
 
@@ -116,7 +129,11 @@ namespace P05ABC
         {
             if (MessageBox.Show("¿Deseas eliminar el articulo?", "", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
+                var r = _Datos.CatArticulosEliminar(this.ItemSeleccionado);
 
+                MessageBox.Show(r.Mensaje, "", MessageBoxButton.OK, r.Valor ? MessageBoxImage.Information : MessageBoxImage.Exclamation);
+
+                this.Buscar();
             }
         }
 
@@ -160,10 +177,46 @@ namespace P05ABC
         {
             if(MessageBox.Show("¿Deseas guardar el articulo?", "", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
+                var r = _Datos.CatArticulosGuardar(this.ItemSeleccionado);
 
+                MessageBox.Show(r.Mensaje, "", MessageBoxButton.OK, r.Valor ? MessageBoxImage.Information : MessageBoxImage.Exclamation);
+
+                if (r.Valor)
+                    o.Close();
             }
         }
 
+
+        private System.Windows.Input.ICommand _BuscarCommand;
+        public System.Windows.Input.ICommand BuscarCommand
+        {
+            get
+            {
+                if (_BuscarCommand == null)
+                {
+                    _BuscarCommand = new RelayCommand<Object>(p => Buscar(p));
+                }
+
+                return _BuscarCommand;
+            }
+        }
+
+        private void Buscar(Object o)
+        {
+            //acciones
+            this.Buscar();
+        }
+
+
+        private void Buscar()
+        {
+            var r = _Datos.CatArticulosBuscar();
+            if (r.Valor)
+            {
+                this.Lista = r.Datos as List<CatArticulosModel>;
+                this.ItemSeleccionado = null;
+            }
+        }
 
 
 
