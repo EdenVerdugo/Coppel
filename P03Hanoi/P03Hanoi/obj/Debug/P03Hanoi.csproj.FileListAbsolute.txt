@@ -1,0 +1,34 @@
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.exe.config
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.exe
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.pdb
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.csprojResolveAssemblyReference.cache
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\MainWindow.g.cs
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\App.g.cs
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi_MarkupCompile.cache
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi_MarkupCompile.lref
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\MainWindow.baml
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.g.resources
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.Properties.Resources.resources
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.csproj.GenerateResource.Cache
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.csproj.CoreCompileInputs.cache
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.exe
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.pdb
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.EN.dll
+c:\users\sistemas5\source\repos\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.exe.config
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.exe
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.EN.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\bin\Debug\P03Hanoi.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.csprojResolveAssemblyReference.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\MainWindow.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\App.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi_MarkupCompile.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi_MarkupCompile.lref
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\MainWindow.baml
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.g.resources
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.Properties.Resources.resources
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.csproj.GenerateResource.Cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.csproj.CoreCompileInputs.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.exe
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi\obj\Debug\P03Hanoi.pdb

@@ -1,0 +1,121 @@
+﻿<Window x:Class="P01ConexionBD.UI.ConfiguracionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:converters="clr-namespace:P01ConexionBD.UI.Converters"
+        xmlns:cnx="clr-namespace:P01ConexionBD;assembly=P01ConexionBD"
+        xmlns:local="clr-namespace:P01ConexionBD.UI"        
+        mc:Ignorable="d"
+        Title="Conexión a base de datos ..." 
+        Height="250" 
+        Width="340"
+        WindowStartupLocation="CenterScreen"
+        Name="Window"
+        FontSize="14"
+        >
+    <Window.Resources>
+        <converters:EnumToBoolConverter x:Key="EBConverter"/>
+    </Window.Resources>
+    <Grid FocusManager.FocusedElement="{Binding ElementName=ServidorText}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel Margin="10">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0,0,0,20"
+                            >
+                    <RadioButton Content="MSSQL Server"
+                                 Margin="5,3"  
+                                 IsChecked="{Binding TipoConexion, Converter={StaticResource EBConverter}, ConverterParameter={x:Static cnx:EConexionBDTipoConexion.MSSQLServer}}"
+                                 />
+                    <RadioButton Content="PostgreSQL"
+                                 Margin="5,3"
+                                 IsChecked="{Binding TipoConexion, Converter={StaticResource EBConverter}, ConverterParameter={x:Static cnx:EConexionBDTipoConexion.PostgreSQL}}"
+                                 />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Servidor :"
+                               Width="100"
+                               TextAlignment="Right"
+                               Margin="5,3"
+                               />
+                    <TextBox Name="ServidorText" 
+                            Text="{Binding ServidorText, UpdateSourceTrigger=PropertyChanged}"
+                             Width="150"
+                             Margin="5,3"
+                             />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Base de datos :"
+                               Width="100"
+                               TextAlignment="Right"
+                               Margin="5,3"
+                               />
+                    <TextBox 
+                            Text="{Binding BDText, UpdateSourceTrigger=PropertyChanged}"
+                             Width="150"
+                             Margin="5,3"
+                             />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Usuario :"
+                               Width="100"
+                               TextAlignment="Right"
+                               Margin="5,3"
+                               />
+                    <TextBox
+                            Text="{Binding UsuarioText, UpdateSourceTrigger=PropertyChanged}"
+                             Width="150"
+                             Margin="5,3"
+                             />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Password :"
+                               Width="100"
+                               TextAlignment="Right"
+                               Margin="5,3"
+                               />
+                    <PasswordBox                             
+                             Width="150"
+                             Margin="5,3"                        
+                             PasswordChar="*"
+                             Name="PasswordText"
+                        >
+                        <PasswordBox.InputBindings>
+                            <KeyBinding Key="Enter"
+                                        Command="{Binding AceptarCommand}"
+                                        CommandParameter="{Binding ElementName=Window}"
+                                        />
+                        </PasswordBox.InputBindings>
+                    </PasswordBox>
+                    
+                </StackPanel>
+            </StackPanel>            
+        </Grid>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right">
+            
+            <Button Content="Aceptar"                    
+                    Width="100"
+                    Margin="5,3"
+                    Command="{Binding AceptarCommand}"
+                    CommandParameter="{Binding ElementName=Window}"
+                    />
+
+            <Button Content="Cancelar"                    
+                    Width="100"
+                    Margin="5,3"
+                    Command="{Binding CerrarCommand}"
+                    CommandParameter="{Binding ElementName=Window}"
+                    />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="P05ABC.Controles.ArticuloControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:P05ABC.Controles"
+             mc:Ignorable="d" 
+             d:DesignHeight="90" 
+             d:DesignWidth="430"             
+             >
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Descripción :"
+                           Margin="5,3"
+                           Width="100"
+                           TextAlignment="Right"
+                           />
+                <TextBox Width="300"
+                         Margin="5,3"
+                         />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Precio :"
+                           Margin="5,3"
+                           Width="100"
+                           TextAlignment="Right"
+                           />
+                <TextBox Width="100"
+                         Margin="5,3"
+                         />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Costo :"
+                           Margin="5,3"
+                           Width="100"
+                           TextAlignment="Right"
+                           />
+                <TextBox Width="100"
+                         Margin="5,3"
+                         />
+            </StackPanel>
+        </StackPanel>            
+    </Grid>
+</UserControl>

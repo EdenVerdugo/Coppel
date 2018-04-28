@@ -1,0 +1,6 @@
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P02Clonador\P02Clonador\bin\Debug\P02Clonador.dll
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P02Clonador\P02Clonador\bin\Debug\P02Clonador.pdb
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P02Clonador\P02Clonador\obj\Debug\P02Clonador.csprojResolveAssemblyReference.cache
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P02Clonador\P02Clonador\obj\Debug\P02Clonador.csproj.CoreCompileInputs.cache
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P02Clonador\P02Clonador\obj\Debug\P02Clonador.dll
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P02Clonador\P02Clonador\obj\Debug\P02Clonador.pdb

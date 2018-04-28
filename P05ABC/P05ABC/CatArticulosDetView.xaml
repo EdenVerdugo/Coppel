@@ -1,0 +1,45 @@
+﻿<Window x:Class="P05ABC.CatArticulosDetView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:P05ABC.Controles"
+        xmlns:local="clr-namespace:P05ABC"
+        mc:Ignorable="d"
+        Title="CatArticulosDetView" 
+        Height="200" 
+        Width="450"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Name="Window"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <uc:ArticuloControlView
+            x:Name="ArticuloControl"
+            />
+
+        <StackPanel Grid.Row="1"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal"
+                    >
+            <Button Content="Guardar"
+                    Margin="5,3"
+                    Width="100"
+                    Command="{Binding GuardarCommand}"
+                    CommandParameter="{Binding Window}"
+                    />
+            <Button Content="Guardar"
+                    Margin="5,3"
+                    Width="100"
+                    Command="{Binding CerrarCommand}"
+                    CommandParameter="{Binding Window}"
+                    />
+
+        </StackPanel>
+    </Grid>    
+</Window>

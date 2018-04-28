@@ -1,0 +1,71 @@
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.exe.config
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.exe
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.pdb
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.DA.dll
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.EN.dll
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.DA.pdb
+J:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.EN.pdb
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.csprojResolveAssemblyReference.cache
+J:\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosDetView.g.cs
+J:\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosView.g.cs
+J:\Coppel\P05ABC\P05ABC\obj\Debug\Controles\ArticuloControlView.g.cs
+J:\Coppel\P05ABC\P05ABC\obj\Debug\App.g.cs
+J:\Coppel\P05ABC\P05ABC\obj\Debug\GeneratedInternalTypeHelper.g.cs
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC_MarkupCompile.cache
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC_MarkupCompile.lref
+J:\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosDetView.baml
+J:\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosView.baml
+J:\Coppel\P05ABC\P05ABC\obj\Debug\Controles\ArticuloControlView.baml
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.g.resources
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.Properties.Resources.resources
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.csproj.GenerateResource.Cache
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.exe
+J:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.pdb
+J:\Coppel\P05ABC\P05ABC\bin\Debug\ControlzEx.dll
+J:\Coppel\P05ABC\P05ABC\bin\Debug\FontAwesome.WPF.dll
+J:\Coppel\P05ABC\P05ABC\bin\Debug\MahApps.Metro.dll
+J:\Coppel\P05ABC\P05ABC\bin\Debug\System.Windows.Interactivity.dll
+J:\Coppel\P05ABC\P05ABC\bin\Debug\ControlzEx.pdb
+J:\Coppel\P05ABC\P05ABC\bin\Debug\FontAwesome.WPF.xml
+J:\Coppel\P05ABC\P05ABC\bin\Debug\MahApps.Metro.pdb
+J:\Coppel\P05ABC\P05ABC\bin\Debug\MahApps.Metro.xml
+J:\Coppel\P05ABC\P05ABC\obj\Debug\App.baml
+F:\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.exe.config
+F:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.exe
+F:\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.exe.config
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.exe
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.exe
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\ControlzEx.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\FontAwesome.WPF.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\MahApps.Metro.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.DA.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.EN.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.DA.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P05ABC.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\ControlzEx.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\FontAwesome.WPF.xml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\MahApps.Metro.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\MahApps.Metro.xml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.csprojResolveAssemblyReference.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosDetView.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosView.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\Controles\ArticuloControlView.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\App.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC_MarkupCompile.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC_MarkupCompile.lref
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\App.baml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosDetView.baml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\CatArticulosView.baml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\Controles\ArticuloControlView.baml
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.g.resources
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.Properties.Resources.resources
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\obj\Debug\P05ABC.csproj.GenerateResource.Cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\P01ConexionBD.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\Npgsql.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC\bin\Debug\SQL\mssql.xml

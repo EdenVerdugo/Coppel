@@ -1,0 +1,139 @@
+﻿<Window x:Class="P03Hanoi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P03Hanoi"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="580" 
+        Width="720"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Name="Window"
+        >    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Margin="20"
+                BorderBrush="Black"
+                BorderThickness="2"
+                >
+            <StackPanel Orientation="Horizontal"
+                        >
+                <Grid Width="210">
+                    <Rectangle 
+                       Fill="Black"
+                       Width="5"
+                       Margin="0,05"
+                        Panel.ZIndex="0"
+                       />
+                    
+                    <StackPanel VerticalAlignment="Bottom"
+                                Name="Torre1"
+                                
+                                >
+                        
+                    </StackPanel>
+                    
+                </Grid>
+
+                <Grid Width="210">
+                    <Rectangle 
+                       Fill="Black"
+                       Width="5"
+                       Margin="0,05"
+                        Panel.ZIndex="0"
+                       />
+
+                    <StackPanel VerticalAlignment="Bottom"
+                                Name="Torre2"
+                                >
+                        
+                    </StackPanel>
+
+                </Grid>
+
+
+                <Grid Width="210">
+                    <Rectangle 
+                       Fill="Black"
+                       Width="5"
+                       Margin="0,05"
+                        Panel.ZIndex="0"
+                       />
+
+                    <StackPanel VerticalAlignment="Bottom"
+                                Name="Torre3"
+                                >
+                        
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+
+            
+        </Border>
+        
+        <StackPanel Grid.Row="1"
+                    Orientation="Vertical"                    
+                    VerticalAlignment="Center"
+                    >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Discos :"                            
+                            Width="90"
+                            TextAlignment="Right"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                         />
+                <TextBox Name="DiscosText"
+                         Width="80"
+                         VerticalAlignment="Center"
+                         Margin="5"                         
+                         />
+
+                <Button Name="InicializarButton"                        
+                        Content="Inicializar"
+                        Click="InicializarButton_Click"
+                        VerticalAlignment="Center"
+                        Width="100"
+                    />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Movimientos :"
+                            Width="90"
+                            TextAlignment="Right"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                         />
+                <TextBox Name="MovimientosText"
+                         Width="80"
+                         VerticalAlignment="Center"
+                         Margin="5"
+                         IsReadOnly="True"
+                         />
+
+                <Button Name="ResolverButton"
+                        Content="Resolver"
+                        Click="ResolverButton_Click"
+                        VerticalAlignment="Center"
+                        Width="100"
+                    />
+            </StackPanel>
+           
+        </StackPanel>
+        <TextBlock Grid.Row="1"
+                   Name="NumMovimientoText"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Margin="20,0"
+                   FontSize="30"
+                   FontWeight="Bold"
+                    Text="0"
+                   />
+    </Grid>
+</Window>

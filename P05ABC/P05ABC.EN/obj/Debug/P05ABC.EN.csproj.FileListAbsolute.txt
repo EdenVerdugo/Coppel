@@ -1,0 +1,14 @@
+J:\Coppel\P05ABC\P05ABC.EN\bin\Debug\P05ABC.EN.dll
+J:\Coppel\P05ABC\P05ABC.EN\bin\Debug\P05ABC.EN.pdb
+J:\Coppel\P05ABC\P05ABC.EN\bin\Debug\Npgsql.dll
+J:\Coppel\P05ABC\P05ABC.EN\bin\Debug\P01ConexionBD.dll
+J:\Coppel\P05ABC\P05ABC.EN\bin\Debug\System.Threading.Tasks.Extensions.dll
+J:\Coppel\P05ABC\P05ABC.EN\obj\Debug\P05ABC.EN.csprojResolveAssemblyReference.cache
+J:\Coppel\P05ABC\P05ABC.EN\obj\Debug\P05ABC.EN.dll
+J:\Coppel\P05ABC\P05ABC.EN\obj\Debug\P05ABC.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.EN\bin\Debug\P05ABC.EN.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.EN\bin\Debug\P05ABC.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.EN\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.EN\obj\Debug\P05ABC.EN.csprojResolveAssemblyReference.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.EN\obj\Debug\P05ABC.EN.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P05ABC\P05ABC.EN\obj\Debug\P05ABC.EN.pdb

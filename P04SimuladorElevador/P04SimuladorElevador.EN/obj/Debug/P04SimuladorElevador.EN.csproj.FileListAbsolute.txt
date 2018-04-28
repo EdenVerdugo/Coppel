@@ -1,0 +1,6 @@
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P04SimuladorElevador\P04SimuladorElevador.EN\bin\Debug\P04SimuladorElevador.EN.dll
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P04SimuladorElevador\P04SimuladorElevador.EN\bin\Debug\P04SimuladorElevador.EN.pdb
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P04SimuladorElevador\P04SimuladorElevador.EN\obj\Debug\P04SimuladorElevador.EN.csprojResolveAssemblyReference.cache
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P04SimuladorElevador\P04SimuladorElevador.EN\obj\Debug\P04SimuladorElevador.EN.csproj.CoreCompileInputs.cache
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P04SimuladorElevador\P04SimuladorElevador.EN\obj\Debug\P04SimuladorElevador.EN.dll
+C:\Users\Eden Verdugo\Documents\Visual Studio 2017\Projects\P04SimuladorElevador\P04SimuladorElevador.EN\obj\Debug\P04SimuladorElevador.EN.pdb

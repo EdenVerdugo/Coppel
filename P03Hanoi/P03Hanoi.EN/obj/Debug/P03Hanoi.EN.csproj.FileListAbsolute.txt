@@ -1,0 +1,12 @@
+c:\Users\sistemas5\source\repos\P03Hanoi\P03Hanoi.EN\bin\Debug\P03Hanoi.EN.dll
+c:\Users\sistemas5\source\repos\P03Hanoi\P03Hanoi.EN\bin\Debug\P03Hanoi.EN.pdb
+c:\Users\sistemas5\source\repos\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.csprojResolveAssemblyReference.cache
+c:\Users\sistemas5\source\repos\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.csproj.CoreCompileInputs.cache
+c:\Users\sistemas5\source\repos\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.dll
+c:\Users\sistemas5\source\repos\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi.EN\bin\Debug\P03Hanoi.EN.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi.EN\bin\Debug\P03Hanoi.EN.pdb
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.csprojResolveAssemblyReference.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.csproj.CoreCompileInputs.cache
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.dll
+C:\Users\Eden Verdugo\Desktop\Coppel\P03Hanoi\P03Hanoi.EN\obj\Debug\P03Hanoi.EN.pdb
